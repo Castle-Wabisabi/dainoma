@@ -1,1 +1,1 @@
-# dainoma
+# 大の間LP
