@@ -443,7 +443,7 @@
 
     .bento-card__img {
       width: 100%;
-      aspect-ratio: 16/9;
+      aspect-ratio: 4/3;
       object-fit: cover;
       display: block;
       filter: brightness(0.82);
@@ -537,7 +537,7 @@
        EXPERIENCE（Desire）
     ============================================================ */
     .experience {
-      padding: 100px 0;
+      padding: 0 0 100px;
       background: var(--bg-mid);
     }
     .experience__grid {
@@ -629,9 +629,42 @@
     }
     .location__card:hover { border-color: var(--border-gold); }
     .location__card__icon {
-      font-size: 1.8rem;
       display: block;
-      margin-bottom: 16px;
+      width: 44px;
+      height: 44px;
+      margin: 0 auto 20px;
+      color: var(--accent-gold);
+      opacity: 0.9;
+    }
+    .location__card__icon svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .location__map {
+      margin-top: 40px;
+    }
+    .location__map iframe {
+      display: block;
+      width: 100%;
+      height: 380px;
+      border: 1px solid var(--border);
+      filter: grayscale(0.5) brightness(0.85) contrast(1.05);
+    }
+    .location__map-link {
+      margin-top: 14px;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+    }
+    .location__map-link a {
+      color: var(--accent-gold);
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
     .location__card__title {
       font-size: 0.88rem;
@@ -929,10 +962,6 @@
         <span class="lang-ja">魅力</span>
         <span class="lang-en">Features</span>
       </a>
-      <a href="#gallery">
-        <span class="lang-ja">写真集</span>
-        <span class="lang-en">Gallery</span>
-      </a>
       <a href="#location">
         <span class="lang-ja">アクセス</span>
         <span class="lang-en">Access</span>
@@ -1044,7 +1073,7 @@
 
     <div class="bento">
       <!-- 01 木組みの美（大） -->
-      <div class="bento-card bento-card--c7 fade-up">
+      <div class="bento-card bento-card--c4 fade-up">
         <img class="bento-card__img" src="images/dainoma-010-beams.jpg" alt="ダイナミックな丸太梁">
         <div class="bento-card__body">
           <p class="bento-card__num">01 / BEAMS &amp; TIMBER</p>
@@ -1062,7 +1091,7 @@
       </div>
 
       <!-- 02 檜浴室 -->
-      <div class="bento-card bento-card--c5 fade-up">
+      <div class="bento-card bento-card--c4 fade-up">
         <img class="bento-card__img" src="images/dainoma-035-goemonburo.jpg" alt="五右衛門風呂の鋳鉄浴槽">
         <div class="bento-card__body">
           <p class="bento-card__num">02 / GOEMONBURO</p>
@@ -1153,165 +1182,13 @@
 
 
 <!-- ===================================================
-     GALLERY（D: Desire）
-=================================================== -->
-<section class="gallery" id="gallery">
-  <div class="gallery__header">
-    <span class="section-label fade-up">GALLERY</span>
-    <h2 class="section-title fade-up">
-      <span class="lang-ja">大の間の景色</span>
-      <span class="lang-en">Moments in Dainoma</span>
-    </h2>
-    <p class="section-en fade-up">Moments in Dainoma</p>
-  </div>
-  <div class="gallery__track" id="galleryTrack">
-    <div class="gallery__item">
-      <img src="images/dainoma-001.jpg" alt="大の間 入口">
-      <p class="gallery__caption">
-        <span class="lang-ja">入口</span>
-        <span class="lang-en">Entrance</span>
-      </p>
-    </div>
-    <div class="gallery__item">
-      <img src="images/dainoma-005.jpg" alt="大の間 室内">
-      <p class="gallery__caption">
-        <span class="lang-ja">室内全景</span>
-        <span class="lang-en">Interior</span>
-      </p>
-    </div>
-    <div class="gallery__item">
-      <img src="images/dainoma-010.jpg" alt="丸太梁 全景">
-      <p class="gallery__caption">
-        <span class="lang-ja">丸太梁</span>
-        <span class="lang-en">Ancient Beams</span>
-      </p>
-    </div>
-    <div class="gallery__item">
-      <img src="images/dainoma-9967.jpg" alt="天窓と寝室">
-      <p class="gallery__caption">
-        <span class="lang-ja">天窓と梁</span>
-        <span class="lang-en">Skylight &amp; Beams</span>
-      </p>
-    </div>
-    <div class="gallery__item">
-      <img src="images/dainoma-022.jpg" alt="木組みの細部">
-      <p class="gallery__caption">
-        <span class="lang-ja">木組みの細部</span>
-        <span class="lang-en">Timber Details</span>
-      </p>
-    </div>
-    <div class="gallery__item">
-      <img src="images/dainoma-9955.jpg" alt="寝室">
-      <p class="gallery__caption">
-        <span class="lang-ja">寝室</span>
-        <span class="lang-en">Bedroom</span>
-      </p>
-    </div>
-    <div class="gallery__item">
-      <img src="images/dainoma-030.jpg" alt="檜浴室">
-      <p class="gallery__caption">
-        <span class="lang-ja">檜浴室</span>
-        <span class="lang-en">Hinoki Bath</span>
-      </p>
-    </div>
-    <div class="gallery__item">
-      <img src="images/dainoma-9950.jpg" alt="行灯とガラス床展示">
-      <p class="gallery__caption">
-        <span class="lang-ja">行灯と梁</span>
-        <span class="lang-en">Andon &amp; Beams</span>
-      </p>
-    </div>
-    <div class="gallery__item">
-      <img src="images/dainoma-040.jpg" alt="和紙ランプ">
-      <p class="gallery__caption">
-        <span class="lang-ja">和紙ランプ</span>
-        <span class="lang-en">Washi Lamp</span>
-      </p>
-    </div>
-    <div class="gallery__item">
-      <img src="images/dainoma-9952.jpg" alt="ガラス床ディスプレイ">
-      <p class="gallery__caption">
-        <span class="lang-ja">ガラス床展示</span>
-        <span class="lang-en">Glass Floor Display</span>
-      </p>
-    </div>
-    <div class="gallery__item">
-      <img src="images/dainoma-9953.jpg" alt="寝室全景">
-      <p class="gallery__caption">
-        <span class="lang-ja">寝室全景</span>
-        <span class="lang-en">Bedroom Panorama</span>
-      </p>
-    </div>
-  </div>
-</section>
-
-
-<!-- ===================================================
      EXPERIENCE（D: Desire）
 =================================================== -->
 <section class="experience" id="experience">
   <div class="container">
 
-    <!-- 浴室体験 -->
-    <div class="experience__grid fade-up">
-      <img class="experience__img" src="images/dainoma-030.jpg" alt="檜浴室体験">
-      <div class="experience__body">
-        <span class="section-label">GOEMONBURO EXPERIENCE</span>
-        <h2 class="section-title">
-          <span class="lang-ja">鋳鉄に沈む、<br>至福の湯浴み</span>
-          <span class="lang-en">Sinking into <br>Cast Iron Bliss</span>
-        </h2>
-        <div class="divider"></div>
-        <div class="lang-ja">
-          <p>
-            丸い鋳鉄の浴槽に、ゆっくりと体を預ける。五右衛門風呂は、かつて日本中の家庭にあった入浴の原風景です。現代ではほぼ姿を消したこの体験が、大の間には残されています。
-          </p>
-          <p>
-            湯の温もりと鉄の質感が、旅の疲れを芯から癒してくれるでしょう。これこそが、侘び寂びの美学です。
-          </p>
-        </div>
-        <div class="lang-en">
-          <p>
-            Slowly lower yourself into the round cast-iron tub. The Goemonburo was once a staple of Japanese homes — a bathing tradition that has almost vanished. In Dainoma, this timeless experience lives on.
-          </p>
-          <p>
-            The warmth of the water and the texture of iron will soothe you to the core. This is the essence of wabi-sabi.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 梁の体験 -->
-    <div class="experience__grid experience__grid--reverse fade-up">
-      <img class="experience__img" src="images/dainoma-9950.jpg" alt="行灯と梁の空間">
-      <div class="experience__body">
-        <span class="section-label">GARDEN RETREAT</span>
-        <h2 class="section-title">
-          <span class="lang-ja">庭を望む、<br>静かな夜</span>
-          <span class="lang-en">A Quiet Night <br>with a Garden View</span>
-        </h2>
-        <div class="divider"></div>
-        <div class="lang-ja">
-          <p>
-            夜になると、庭の緑が闇に溶け、障子越しにやわらかな光だけが漏れてきます。畳に寝転がり、虫の声に耳を傾ける——大の間の夜は、古民家の1階だからこそ味わえる地に近い静寂に満ちています。
-          </p>
-          <p>
-            古民家の夜は静かです。その静寂の中で、庭の気配を感じながら眠る体験は、日常から遠く離れた場所へ連れていってくれます。
-          </p>
-        </div>
-        <div class="lang-en">
-          <p>
-            As night falls, the garden fades into darkness and only a soft glow seeps through the shoji screens. Lie on the tatami and listen to the insects — Dainoma's evenings are filled with a grounded stillness that only a ground-floor room in an old house can offer.
-          </p>
-          <p>
-            Nights in an ancient house are remarkably still. Drifting to sleep while sensing the garden nearby transports you far beyond the reach of everyday life.
-          </p>
-        </div>
-      </div>
-    </div>
-
     <!-- Coffee Collab -->
-    <div class="coffee-collab fade-up" style="margin-top: 80px; padding: 56px 40px; border: 1px solid var(--border);">
+    <div class="coffee-collab fade-up" style="padding: 56px 40px; border: 1px solid var(--border);">
       <div class="coffee-collab__inner">
         <div class="coffee-collab__logo">
           <a href="https://maps.app.goo.gl/fcheVRccH4enn63JA" target="_blank" rel="noopener"><img src="images/align-coffee-logo.jpg" alt="Align Coffee Roaster ロゴ"></a>
@@ -1357,7 +1234,9 @@
 
     <div class="location__cards fade-up">
       <div class="location__card">
-        <span class="location__card__icon">🏯</span>
+        <span class="location__card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M8 43h32"/><path d="M11 43l2-8h22l2 8"/><path d="M16 35v-7h16v7"/><path d="M7 28c6 0 11-2 17-6 6 4 11 6 17 6"/><path d="M19 22v-6h10v6"/><path d="M12 16c5 0 9-1 12-5 3 4 7 5 12 5"/><path d="M21 11V8h6v3"/><path d="M18 8c2 0 4-1 6-4 2 3 4 4 6 4"/></svg>
+        </span>
         <h4 class="location__card__title">
           <span class="lang-ja">世界遺産 姫路城</span>
           <span class="lang-en">Himeji Castle</span>
@@ -1368,7 +1247,9 @@
         </p>
       </div>
       <div class="location__card">
-        <span class="location__card__icon">🚂</span>
+        <span class="location__card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><rect x="12" y="6" width="24" height="30" rx="6"/><path d="M16 12h16v11H16z"/><circle cx="18" cy="29" r="1.4"/><circle cx="30" cy="29" r="1.4"/><path d="M17 36l-4 6M31 36l4 6M9 42h30"/></svg>
+        </span>
         <h4 class="location__card__title">
           <span class="lang-ja">JR 姫路駅</span>
           <span class="lang-en">JR Himeji Station</span>
@@ -1379,7 +1260,9 @@
         </p>
       </div>
       <div class="location__card">
-        <span class="location__card__icon">🏮</span>
+        <span class="location__card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M20 5h8v4h-8z"/><path d="M24 9c-7 0-11 4-11 13s4 13 11 13 11-4 11-13S31 9 24 9z"/><path d="M14.5 17c6 2 13 2 19 0M13.5 26c7 2.500 14 2.500 21 0"/><path d="M20 35h8v3h-8z"/><path d="M24 38v6"/></svg>
+        </span>
         <h4 class="location__card__title">
           <span class="lang-ja">城下町エリア</span>
           <span class="lang-en">Castle Town Area</span>
@@ -1389,6 +1272,21 @@
           <span class="lang-en">Dining &amp; Shopping<br>Perfect for strolling</span>
         </p>
       </div>
+    </div>
+
+    <div class="location__map fade-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.6018442069444!2d134.6998237262604!3d34.84133607891871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355520002837b71f%3A0xb85ed0f02cfd0d54!2z44CSNjcwLTAwMDgg5YW15bqr55yM5aer6Lev5biC5qmL5LmL55S677yS77yU!5e0!3m2!1sja!2sjp!4v1724580715251!5m2!1sja!2sjp"
+        title="侘寂の地図 / Map"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen></iframe>
+      <p class="location__map-link">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%A7%AB%E8%B7%AF%E5%B8%82%E6%A9%8B%E4%B9%8B%E7%94%BA22" target="_blank" rel="noopener">
+          <span class="lang-ja">Googleマップで開く</span>
+          <span class="lang-en">Open in Google Maps</span>
+        </a>
+      </p>
     </div>
   </div>
 </section>
@@ -1527,14 +1425,6 @@
         <span class="lang-ja">公式サイトで空き確認・ご予約</span>
         <span class="lang-en">Check Availability / Book Now</span>
       </a>
-
-      <p class="pricing__ota">
-        <span class="lang-ja">各OTAからも予約可能：</span>
-        <span class="lang-en">Also available on:</span>
-        <a href="https://travel.rakuten.co.jp/HOTEL/167556/" target="_blank">Rakuten</a> /
-        <a href="https://www.jalan.net/yad368484/" target="_blank">Jalan</a> /
-        <a href="https://www.booking.com/" target="_blank">Booking.com</a>
-      </p>
     </div>
   </div>
 </section>
@@ -1558,10 +1448,8 @@
         <span class="lang-ja">公式サイトで予約する</span>
         <span class="lang-en">Book via Official Website</span>
       </a>
-      <a href="mailto:info@wabisabi-himeji.jp" class="btn btn--outline btn--large">
-        <span class="lang-ja">お問い合わせ</span>
-        <span class="lang-en">Inquiry</span>
-      </a>
+      <a href="https://wabisabi-himeji.jp/contact/" class="btn btn--outline btn--large lang-ja">お問い合わせ</a>
+      <a href="https://wabisabi-himeji.jp/en/contact/" class="btn btn--outline btn--large lang-en">Inquiry</a>
     </div>
     <p style="margin-top: 28px; font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.1em;" class="fade-up">
       <span class="lang-ja">公式サイト：</span>
@@ -1582,25 +1470,9 @@
         <img src="images/logo.png" alt="Wabi-Sabi">
         <div class="site-footer__logo-text">
           <strong>侘 寂</strong>
-          <span class="lang-ja">姫路城下町古民家旅館<br>〒670-0012 兵庫県姫路市</span>
-          <span class="lang-en">Castle Town Machiya Inn<br>Himeji, Hyogo, Japan</span>
+          <span class="lang-ja">姫路城下町古民家旅館<br>〒670-0008 兵庫県姫路市橋之町22</span>
+          <span class="lang-en">Castle Town Machiya Inn<br>22, Hashino-cho, Himeji, Hyogo 670-0008, Japan</span>
         </div>
-      </div>
-      <div class="site-footer__links">
-        <a href="https://wabisabi-himeji.jp">
-          <span class="lang-ja">公式サイト</span>
-          <span class="lang-en">Official Website</span>
-        </a>
-        <a href="https://www.instagram.com/wabisabi.himeji/" target="_blank">Instagram</a>
-        <a href="https://travel.rakuten.co.jp/HOTEL/167556/" target="_blank">
-          <span class="lang-ja">楽天トラベル</span>
-          <span class="lang-en">Rakuten Travel</span>
-        </a>
-        <a href="https://www.jalan.net/yad368484/" target="_blank">
-          <span class="lang-ja">じゃらん</span>
-          <span class="lang-en">Jalan</span>
-        </a>
-        <a href="https://www.booking.com/" target="_blank">Booking.com</a>
       </div>
     </div>
     <p class="site-footer__copy">
